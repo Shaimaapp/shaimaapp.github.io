@@ -1,1 +1,2 @@
-ca-app-pub-1126595800097689~4100839219
+# Authorized digital sellers for your apps
+google.com, pub-1126595800097689, DIRECT, f08c47fec0942fa0
