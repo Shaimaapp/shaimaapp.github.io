@@ -1,12 +1,773 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>MoodMatch Official Website</title>
-<h1>Welcome to MoodMatch Official Page</h1>
-<p>This page is used for developer verification and app-related legal links.</p>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaimaa Apps – شيماء | App Developer</title>
+    <style>
+        :root {
+            --bg-dark: #12061f;
+            --bg-card: #1e1030;
+            --accent: #f5c042;
+            --accent-soft: #ffd878;
+            --purple: #7b3cff;
+            --purple-soft: #b58dff;
+            --text-main: #ffffff;
+            --text-muted: #c7c4d9;
+        }
 
-<ul>
-  <li><a href="https://shaimaapp.github.io/moodmatch-privacy" target="_blank">Privacy Policy</a></li>
-  <li><a href="https://shaimaapp.github.io/app-ads.txt" target="_blank">App-ads.txt</a></li>
-</ul>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<p>© 2025 MoodMatch. All rights reserved.</p>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+            background: radial-gradient(circle at top, #30114d 0, #12061f 55%, #05030a 100%);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 14px;
+            background: conic-gradient(from 200deg, #f5c042, #7b3cff, #f5c042);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+            color: #12061f;
+            box-shadow: 0 0 18px rgba(245,192,66,0.7);
+        }
+
+        .brand-text-main {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .brand-text-sub {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        nav a {
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--purple-soft));
+            transition: width 0.25s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            border-radius: 999px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.25);
+            font-size: 11px;
+        }
+
+        .lang-btn {
+            padding: 4px 10px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(120deg, var(--accent), var(--purple-soft));
+            color: #12061f;
+            font-weight: 600;
+        }
+
+        /* Hero */
+        .hero {
+            border-radius: 24px;
+            padding: 28px 22px;
+            background: radial-gradient(circle at top right, rgba(181,141,255,0.25), transparent 55%),
+                        radial-gradient(circle at top left, rgba(245,192,66,0.3), transparent 60%),
+                        linear-gradient(135deg, #1a0b2b, #27123f);
+            box-shadow: 0 24px 70px rgba(0,0,0,0.60);
+            margin-bottom: 32px;
+            display: grid;
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+            gap: 18px;
+        }
+
+        .hero-title {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .hero-highlight {
+            background: linear-gradient(120deg, var(--accent), var(--purple-soft));
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .tag {
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(15,6,30,0.5);
+        }
+
+        .tag-gold {
+            border-color: rgba(245,192,66,0.65);
+            background: rgba(245,192,66,0.05);
+            color: var(--accent-soft);
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn-main {
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            background: linear-gradient(120deg, var(--accent), var(--purple-soft));
+            color: #12061f;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+        }
+
+        .btn-secondary {
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.35);
+            background: transparent;
+            color: #ffffff;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .hero-right {
+            border-radius: 20px;
+            padding: 14px 14px 16px;
+            background: rgba(10,4,24,0.9);
+            border: 1px solid rgba(243,196,88,0.45);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hero-stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .hero-stat-main {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .hero-stat-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(245,192,66,0.09);
+            border: 1px solid rgba(245,192,66,0.55);
+            margin-top: 4px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .about-text {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Apps */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 18px;
+        }
+
+        .app-card {
+            background: rgba(11,4,25,0.9);
+            border-radius: 18px;
+            padding: 16px 14px;
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: 0 14px 40px rgba(0,0,0,0.5);
+        }
+
+        .app-pill {
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(123,60,255,0.18);
+            color: var(--purple-soft);
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        .app-logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            object-fit: cover;
+            background: #222;
+        }
+
+        .app-title {
+            font-size: 15px;
+            margin-bottom: 2px;
+        }
+
+        .app-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        /* Contact */
+        .contact-box {
+            background: rgba(9,3,20,0.95);
+            border-radius: 18px;
+            padding: 18px 16px;
+            border: 1px solid rgba(255,255,255,0.08);
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+            gap: 16px;
+        }
+
+        .contact-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .contact-email {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent-soft);
+        }
+
+        .contact-note {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(4,0,12,0.9);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 8px 10px;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 13px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #7e7898;
+        }
+
+        .contact-form button {
+            justify-self: flex-start;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Language containers */
+        .lang {
+            display: none;
+        }
+        .lang.active {
+            display: block;
+        }
+
+        .lang-en {
+            direction: ltr;
+            text-align: left;
+        }
+        .lang-en header {
+            flex-direction: row-reverse;
+        }
+        .lang-en nav a::after {
+            right: auto;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- ARABIC VERSION -->
+    <div class="lang lang-ar active" id="lang-ar">
+        <header>
+            <div class="brand">
+                <div class="brand-logo">ش</div>
+                <div>
+                    <div class="brand-text-main">Shaimaa Apps</div>
+                    <div class="brand-text-sub">تجارب رقمية تُصنع بحب وتفاصيل</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#about-ar">من أنا</a>
+                <a href="#apps-ar">التطبيقات</a>
+                <a href="#contact-ar">تواصل واقتراحات</a>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="ar">AR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div>
+                <h1 class="hero-title">
+                    شيماء <span class="hero-highlight">مطوّرة تطبيقات</span> وصانعة تجارب رقمية مبهجة.
+                </h1>
+                <p class="hero-subtitle">
+                    أبتكر تطبيقات بسيطة وعميقة في نفس الوقت؛ تركّز على المزاج، اللعب، وتجارب يومية
+                    تجعل حياة المستخدم ألطف وأسهل – مثل MoodMatch وتطبيقات الكلمات العربية.
+                </p>
+                <div class="hero-tags">
+                    <span class="tag tag-gold">تطبيقات iOS</span>
+                    <span class="tag">تطبيقات ترفيهية وإبداعية</span>
+                    <span class="tag">تصميم تجربة مستخدم</span>
+                    <span class="tag">تركيز على السوق العربي</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-main" onclick="document.getElementById('apps-ar').scrollIntoView({behavior:'smooth'})">
+                        استكشف تطبيقاتي
+                    </button>
+                    <button class="btn-secondary" onclick="document.getElementById('contact-ar').scrollIntoView({behavior:'smooth'})">
+                        أرسل فكرة أو اقتراح
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div>
+                    <div class="hero-stat-label">التوجّه</div>
+                    <div class="hero-stat-main">تجارب بسيطة… بلمسة عاطفية عميقة</div>
+                    <div class="hero-stat-chip">
+                        <span>💜</span>
+                        <span>MoodMatch ألوان وهوية تلهم كل مشاريعي</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-stat-label">ما أؤمن به</div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                        كل تطبيق هو حوار قصير بين المستخدم وبين نفسه: لحظة مزاج، لعبة سريعة،
+                        أو مساحة يعبّر فيها عن شيء بسيط لكنه حقيقي.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-ar">
+            <h2 class="section-title">من هي شيماء؟</h2>
+            <p class="section-subtitle">نبذة سريعة عنّي وماذا أقدّم من خلال Shaimaa Apps.</p>
+            <p class="about-text">
+                شيماء، صانعة محتوى رقمي ومطوّرة تطبيقات تهتم بالمزاج، العلاقات، والتجارب اليومية البسيطة
+                التي تترك أثر. خلفيتي تمتد بين التعليم، الكتابة، والتصميم، وهذا ينعكس في التطبيقات
+                التي أطلقها؛ تطبيقات سهلة الاستخدام، مبهجة بصريًا، وقريبة من روح المستخدم العربي.
+                <br><br>
+                أركّز حاليًا على بناء منتجات رقمية يمكن تطويرها وبيعها لاحقًا لمستثمرين أو شركات تهتم
+                بالتجارب العاطفية والاجتماعية في عالم السوشال ميديا والألعاب البسيطة.
+            </p>
+        </section>
+
+        <section id="apps-ar">
+            <h2 class="section-title">التطبيقات التي أنشأتها</h2>
+            <p class="section-subtitle">
+                نظرة على التطبيقات التي عملت عليها – الهوية البصرية في الغالب مستوحاة من MoodMatch وألوانه.
+            </p>
+
+            <div class="apps-grid">
+                <!-- MoodMatch -->
+                <article class="app-card">
+                    <div class="app-pill">Social • Mood • Camera</div>
+                    <div class="app-header">
+                        <img src="moodmatch-logo.png" alt="شعار MoodMatch" class="app-logo">
+                        <div>
+                            <h3 class="app-title">MoodMatch</h3>
+                            <div style="font-size: 12px; color: var(--text-muted);">تطبيق المزاج واللحظات الحقيقية</div>
+                        </div>
+                    </div>
+                    <p class="app-desc">
+                        تطبيق يلتقط المزاج اليومي من خلال الصور والتعليقات القصيرة، ليوثّق اللحظات الحقيقية
+                        بعيدًا عن الفلتر المثالي، مع هوية بصرية بنفسجية ذهبية مميّزة.
+                    </p>
+                </article>
+
+                <!-- اربطها -->
+                <article class="app-card">
+                    <div class="app-pill">Game • Arabic Words</div>
+                    <div class="app-header">
+                        <img src="arbot-ha-logo.png" alt="شعار اربطها" class="app-logo">
+                        <div>
+                            <h3 class="app-title">اربطها</h3>
+                            <div style="font-size: 12px; color: var(--text-muted);">لعبة الروابط والكلمات</div>
+                        </div>
+                    </div>
+                    <p class="app-desc">
+                        لعبة خفيفة تعتمد على ربط كلمات أو عناصر بطريقة ذكية وسريعة، مع ألوان مرحة
+                        تركز على البساطة وسهولة الفهم لجميع الأعمار.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact-ar">
+            <h2 class="section-title">تواصل واقتراحات</h2>
+            <p class="section-subtitle">
+                تحب ترسل فكرة لتطبيق جديد؟ تعليق على تجربة استخدمتِها؟ أو عرض تعاون؟ يسعدني أسمع منك.
+            </p>
+
+            <div class="contact-box">
+                <div>
+                    <div class="contact-label">البريد الإلكتروني المباشر</div>
+                    <div class="contact-email">co.87s@hotmail.com</div>
+                    <p class="contact-note">
+                        يمكنك استخدام هذا البريد لأي اقتراح، تعاون، أو استفسار حول التطبيقات الحالية أو المشاريع القادمة.
+                    </p>
+                </div>
+
+                <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <label for="name-ar">الاسم (اختياري)</label>
+                        <input id="name-ar" name="name" type="text" placeholder="اكتب اسمك الأول أو لقبك" />
+                    </div>
+                    <div>
+                        <label for="topic-ar">عن أي تطبيق تتحدث؟</label>
+                        <input id="topic-ar" name="topic" type="text" placeholder="MoodMatch / اربطها / فكرة جديدة..." />
+                    </div>
+                    <div>
+                        <label for="message-ar">الفكرة أو الرسالة</label>
+                        <textarea id="message-ar" name="message" placeholder="شاركني اقتراحك أو ملاحظتك هنا"></textarea>
+                    </div>
+                    <button type="submit" class="btn-main">إرسال من خلال البريد</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Shaimaa Apps – جميع الحقوق محفوظة.  
+            مبنية بألوان وإلهام من MoodMatch 💜
+        </footer>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div class="lang lang-en" id="lang-en">
+        <header>
+            <div class="brand">
+                <div class="brand-logo">S</div>
+                <div>
+                    <div class="brand-text-main">Shaimaa Apps</div>
+                    <div class="brand-text-sub">Digital experiences with heart & detail</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#about-en">About</a>
+                <a href="#apps-en">Apps</a>
+                <a href="#contact-en">Contact</a>
+                <div class="lang-switch">
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div>
+                <h1 class="hero-title">
+                    Shaimaa, an <span class="hero-highlight">app developer</span> crafting warm, emotional digital moments.
+                </h1>
+                <p class="hero-subtitle">
+                    I create simple yet emotionally deep apps that focus on mood, play, and small everyday experiences –
+                    like MoodMatch and Arabic word games – designed especially for our region.
+                </p>
+                <div class="hero-tags">
+                    <span class="tag tag-gold">iOS Apps</span>
+                    <span class="tag">Social & playful concepts</span>
+                    <span class="tag">User experience first</span>
+                    <span class="tag">Arabic-speaking markets</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-main" onclick="document.getElementById('apps-en').scrollIntoView({behavior:'smooth'})">
+                        View my apps
+                    </button>
+                    <button class="btn-secondary" onclick="document.getElementById('contact-en').scrollIntoView({behavior:'smooth'})">
+                        Share an idea
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div>
+                    <div class="hero-stat-label">Vision</div>
+                    <div class="hero-stat-main">Small apps, big emotional impact.</div>
+                    <div class="hero-stat-chip">
+                        <span>💜</span>
+                        <span>MoodMatch colors & identity inspire most of my projects.</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-stat-label">What I believe</div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                        Every app is a short conversation between a user and themselves – a mood snapshot,
+                        a quick game, or a space to express something honest and simple.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-en">
+            <h2 class="section-title">Who is Shaimaa?</h2>
+            <p class="section-subtitle">A short introduction to what I do through Shaimaa Apps.</p>
+            <p class="about-text">
+                I'm Shaimaa – a digital creator and app developer who cares about mood, relationships,
+                and everyday experiences that leave a subtle emotional mark. My background spans education,
+                writing, and design, and that blend shows up in the apps I build: easy to use, visually warm,
+                and emotionally close to Arabic-speaking users.
+                <br><br>
+                My focus now is building digital products that can later grow into investable, sellable products
+                for companies and investors interested in emotional, social, and lifestyle-focused experiences.
+            </p>
+        </section>
+
+        <section id="apps-en">
+            <h2 class="section-title">Apps I’ve created</h2>
+            <p class="section-subtitle">
+                A glimpse of the apps I’ve built so far. Most of the visual identity is inspired by MoodMatch’s purple–gold palette.
+            </p>
+
+            <div class="apps-grid">
+                <!-- MoodMatch -->
+                <article class="app-card">
+                    <div class="app-pill">Social • Mood • Camera</div>
+                    <div class="app-header">
+                        <img src="moodmatch-logo.png" alt="MoodMatch logo" class="app-logo">
+                        <div>
+                            <h3 class="app-title">MoodMatch</h3>
+                            <div style="font-size: 12px; color: var(--text-muted);">Real-mood social snapshots</div>
+                        </div>
+                    </div>
+                    <p class="app-desc">
+                        A mood-focused app that captures how you feel through photos and short captions,
+                        keeping things authentic and away from “perfect filter” pressure – all wrapped in
+                        a bold purple–gold identity.
+                    </p>
+                </article>
+
+                <!-- Arbot-ha -->
+                <article class="app-card">
+                    <div class="app-pill">Game • Arabic Words</div>
+                    <div class="app-header">
+                        <img src="arbot-ha-logo.png" alt="Arbot-ha logo" class="app-logo">
+                        <div>
+                            <h3 class="app-title">اربطها (Arbot-ha)</h3>
+                            <div style="font-size: 12px; color: var(--text-muted);">Links & words mini-game</div>
+                        </div>
+                    </div>
+                    <p class="app-desc">
+                        A light Arabic game built around connecting items or words quickly and intuitively,
+                        with bright playful colors designed for all ages.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact-en">
+            <h2 class="section-title">Contact & Ideas</h2>
+            <p class="section-subtitle">
+                Have an idea for a new app? Feedback on one of my projects? Or a collaboration in mind? I’d love to hear from you.
+            </p>
+
+            <div class="contact-box">
+                <div>
+                    <div class="contact-label">Direct email</div>
+                    <div class="contact-email">co.87s@hotmail.com</div>
+                    <p class="contact-note">
+                        Use this email for suggestions, collaborations, or questions about current apps and upcoming projects.
+                    </p>
+                </div>
+
+                <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <label for="name-en">Name (optional)</label>
+                        <input id="name-en" name="name" type="text" placeholder="Your first name or nickname" />
+                    </div>
+                    <div>
+                        <label for="topic-en">Which app are you talking about?</label>
+                        <input id="topic-en" name="topic" type="text" placeholder="MoodMatch / Arbot-ha / new idea..." />
+                    </div>
+                    <div>
+                        <label for="message-en">Message or idea</label>
+                        <textarea id="message-en" name="message" placeholder="Share your idea, feedback, or collaboration proposal here"></textarea>
+                    </div>
+                    <button type="submit" class="btn-main">Send via email</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Shaimaa Apps – All rights reserved.  
+            Powered by the colors & spirit of MoodMatch 💜
+        </footer>
+    </div>
+
+</div>
+
+<script>
+    // Language toggle
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const langAr = document.getElementById('lang-ar');
+    const langEn = document.getElementById('lang-en');
+
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.dataset.lang;
+
+            langButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            if (target === 'ar') {
+                langAr.classList.add('active');
+                langEn.classList.remove('active');
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', 'ar');
+            } else {
+                langEn.classList.add('active');
+                langAr.classList.remove('active');
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', 'en');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
