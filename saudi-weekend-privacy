@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudi Weekend – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background: #faf7f2;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #5b3a1a;
+    }
+    hr {
+      margin: 40px 0;
+    }
+    .section-ar {
+      direction: rtl;
+      text-align: right;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Saudi Weekend – Privacy Policy</h1>
+  <p><em>Last updated: 24 November 2025</em></p>
+
+  <p>
+    This Privacy Policy explains how <strong>Saudi Weekend</strong> (“the App”, “we”, “us”) handles your information.
+    Saudi Weekend is a simple travel/discovery app that helps you find weekend ideas and places in Saudi Arabia.
+    We designed it to collect as little information as possible.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+
+  <h3>1.1. Information you provide directly</h3>
+  <p>
+    The current version of Saudi Weekend <strong>does not require you to create an account</strong> and does not ask you
+    to enter your name, email, or any other personal profile inside the app.
+  </p>
+  <p>
+    If you contact us by email or through our website, we will receive the information you choose to share in that message
+    (such as your name, email address, and the content of your inquiry). We use it only to reply and provide support.
+  </p>
+
+  <h3>1.2. Device and usage data</h3>
+  <p>
+    When you use the App, some technical information may be collected automatically by Apple or the operating system
+    (for example: device model, OS version, crash logs, general usage data).
+    We do <strong>not</strong> use this information to personally identify you. It is used only to improve stability
+    and performance.
+  </p>
+
+  <h3>1.3. Location information</h3>
+  <p>
+    Saudi Weekend may ask for access to your location in order to:
+  </p>
+  <ul>
+    <li>show nearby places, or</li>
+    <li>make it easier to explore locations on a map.</li>
+  </ul>
+  <p>
+    Granting location access is <strong>optional</strong>. If you allow it, location data is used only inside the app
+    to show relevant places and is <strong>not stored on our own servers</strong> or sold to third parties.
+  </p>
+
+  <h3>1.4. Data stored on your device</h3>
+  <p>
+    Any favorites, saved places, or app settings are stored locally on your device.
+    We do not have direct access to this data.
+  </p>
+
+  <h2>2. Third-Party Services</h2>
+  <p>
+    Saudi Weekend may display maps, open links, or integrate with services provided by third parties
+    (such as Apple Maps or web pages in your browser).
+    Those services may collect information according to their own privacy policies.
+    We recommend reading the privacy policy of any third-party service you use.
+  </p>
+  <p>
+    The current version of the App <strong>does not show third-party advertising</strong> (such as ad networks).
+    If we add ads in a future update, this Privacy Policy will be updated to describe how data is used for that purpose.
+  </p>
+
+  <h2>3. How We Use Your Information</h2>
+  <p>We use the limited information we receive only to:</p>
+  <ul>
+    <li>operate and improve the App,</li>
+    <li>fix bugs and understand crashes,</li>
+    <li>respond to your support requests or feedback.</li>
+  </ul>
+  <p>
+    We do <strong>not</strong> sell, rent, or trade your personal data to third parties.
+  </p>
+
+  <h2>4. Data Retention</h2>
+  <ul>
+    <li>
+      Technical logs and analytics (if any) are kept only for as long as necessary to analyze issues
+      and improve the App.
+    </li>
+    <li>
+      Emails or support messages you send us may be retained for reference, unless you specifically ask us to delete them.
+    </li>
+  </ul>
+
+  <h2>5. Children’s Privacy</h2>
+  <p>
+    Saudi Weekend is not directed to children under the age of 13.
+    We do not knowingly collect personal information from children under 13.
+    If you believe that a child has provided us with personal information, please contact us and we will delete it.
+  </p>
+
+  <h2>6. Your Rights and Choices</h2>
+  <p>
+    Depending on your country or region, you may have certain rights over your personal data, such as:
+  </p>
+  <ul>
+    <li>the right to access or request a copy of the data we hold about you,</li>
+    <li>the right to ask us to correct or delete your data.</li>
+  </ul>
+  <p>
+    If you would like to exercise any of these rights, please contact us using the email below.
+  </p>
+  <p>
+    You can also:
+  </p>
+  <ul>
+    <li>disable location permissions at any time in your device settings,</li>
+    <li>delete the App to remove data stored locally on your device.</li>
+  </ul>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time.
+    When we do, we will change the “Last updated” date at the top.
+    Your continued use of the App after any changes means you accept the updated Policy.
+  </p>
+
+  <h2>8. Contact Us</h2>
+  <p>
+    If you have any questions about this Privacy Policy or about Saudi Weekend, you can contact us at:
+  </p>
+  <ul>
+    <li><strong>Developer:</strong> Shaima Alkhaldi</li>
+    <li><strong>Website:</strong> <a href="https://shaima.dev" target="_blank" rel="noopener noreferrer">https://shaima.dev</a></li>
+    <li><strong>Email:</strong> <a href="mailto:co.87s@hotmail.com">co.87s@hotmail.com</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Arabic Version -->
+
+  <div class="section-ar">
+    <h1>سياسة الخصوصية – ويكند السعودية</h1>
+    <p><em>آخر تحديث: 24 نوفمبر 2025</em></p>
+
+    <p>
+      توضح هذه السياسة كيف يتعامل تطبيق <strong>ويكند السعودية</strong> (“التطبيق”، “نحن”) مع بياناتك.
+      ويكند السعودية تطبيق بسيط لاكتشاف أفكار للويكند وأماكن داخل المملكة العربية السعودية،
+      وتم تصميمه بحيث يجمع أقل قدر ممكن من البيانات.
+    </p>
+
+    <h2>١. البيانات التي نجمعها</h2>
+
+    <h3>١.١. البيانات التي تقدمها أنت مباشرة</h3>
+    <p>
+      النسخة الحالية من التطبيق <strong>لا تتطلب إنشاء حساب</strong>، ولا تطلب منك إدخال اسمك أو بريدك الإلكتروني
+      أو أي ملف شخصي داخل التطبيق.
+    </p>
+    <p>
+      إذا تواصلت معنا عبر البريد الإلكتروني أو من خلال موقعنا، سنستلم المعلومات التي تختار مشاركتها في رسالتك
+      (مثل الاسم، البريد الإلكتروني، محتوى الرسالة)، ونستخدمها فقط للرد عليك وتقديم الدعم.
+    </p>
+
+    <h3>١.٢. بيانات الجهاز والاستخدام</h3>
+    <p>
+      أثناء استخدامك للتطبيق، قد يتم جمع بعض المعلومات التقنية بشكل تلقائي من قبل آبل أو نظام التشغيل
+      (مثل نوع الجهاز، إصدار النظام، سجلات الأعطال، وبعض بيانات الاستخدام العامة).
+      نحن <strong>لا نستخدم</strong> هذه المعلومات للتعرّف عليك بشكل شخصي، بل فقط لتحسين أداء واستقرار التطبيق.
+    </p>
+
+    <h3>١.٣. بيانات الموقع الجغرافي</h3>
+    <p>قد يطلب التطبيق الإذن للوصول إلى موقعك الجغرافي من أجل:</p>
+    <ul>
+      <li>عرض أماكن قريبة منك، أو</li>
+      <li>تسهيل استكشاف الأماكن على الخريطة.</li>
+    </ul>
+    <p>
+      إعطاء الإذن اختياري تمامًا. إذا وافقت، يتم استخدام موقعك فقط داخل التطبيق لعرض أماكن مناسبة،
+      ولا نقوم <strong>بتخزينه على خوادمنا الخاصة</strong> أو بيعه لأي طرف ثالث.
+    </p>
+
+    <h3>١.٤. البيانات المخزّنة على جهازك</h3>
+    <p>
+      المفضّلات، والأماكن المحفوظة، وإعدادات التطبيق يتم تخزينها محليًا على جهازك فقط،
+      ونحن لا نملك وصولًا مباشرًا لها.
+    </p>
+
+    <h2>٢. خدمات الطرف الثالث</h2>
+    <p>
+      قد يعرض التطبيق خرائط أو يفتح روابط أو يدمج خدمات مقدمة من أطراف ثالثة
+      (مثل خرائط آبل أو صفحات ويب في المتصفّح).
+      قد تقوم هذه الخدمات بجمع بيانات وفقًا لسياسات الخصوصية الخاصة بها، وننصحك بقراءتها.
+    </p>
+    <p>
+      النسخة الحالية من التطبيق <strong>لا تعرض إعلانات من شبكات إعلانية</strong>.
+      وفي حال إضافة الإعلانات مستقبلاً، سنقوم بتحديث هذه السياسة لتوضيح كيفية استخدام البيانات لهذا الغرض.
+    </p>
+
+    <h2>٣. كيفية استخدامنا لبياناتك</h2>
+    <p>نستخدم المعلومات المحدودة التي تصلنا فقط من أجل:</p>
+    <ul>
+      <li>تشغيل وتحسين التطبيق،</li>
+      <li>إصلاح المشاكل والأعطال،</li>
+      <li>الرد على استفساراتك وملاحظاتك.</li>
+    </ul>
+    <p>
+      نحن <strong>لا نبيع</strong> بياناتك الشخصية، ولا نؤجرها، ولا نتاجر بها مع أي طرف ثالث.
+    </p>
+
+    <h2>٤. مدة الاحتفاظ بالبيانات</h2>
+    <ul>
+      <li>
+        يتم الاحتفاظ بسجلات الأعطال وبعض بيانات التحليل (إن وُجدت) للمدة اللازمة فقط لتحليل المشكلات وتحسين التطبيق.
+      </li>
+      <li>
+        رسائل البريد أو طلبات الدعم التي ترسلها لنا قد نحتفظ بها للرجوع إليها لاحقًا، ما لم تطلب منا حذفها.
+      </li>
+    </ul>
+
+    <h2>٥. خصوصية الأطفال</h2>
+    <p>
+      تطبيق ويكند السعودية غير موجّه للأطفال دون سن 13 عامًا،
+      ولا نقوم عمدًا بجمع بيانات شخصية عن أطفال دون 13 سنة.
+      إذا كنت تعتقد أن طفلًا قد زوّدنا ببيانات شخصية، يرجى التواصل معنا لنقوم بحذفها.
+    </p>
+
+    <h2>٦. حقوقك واختياراتك</h2>
+    <p>
+      قد يكون لديك، بحسب بلدك أو نظامك القانوني، بعض الحقوق المتعلقة ببياناتك الشخصية، مثل:
+    </p>
+    <ul>
+      <li>حق الوصول إلى البيانات التي نحتفظ بها عنك أو طلب نسخة منها،</li>
+      <li>حق طلب تصحيح أو حذف بياناتك.</li>
+    </ul>
+    <p>
+      للاستفادة من هذه الحقوق، يمكنك التواصل معنا عبر البريد الإلكتروني المذكور أدناه.
+    </p>
+    <p>
+      يمكنك أيضًا:
+    </p>
+    <ul>
+      <li>إلغاء صلاحية الموقع للتطبيق من إعدادات جهازك في أي وقت،</li>
+      <li>حذف التطبيق لإزالة البيانات المخزّنة على جهازك.</li>
+    </ul>
+
+    <h2>٧. التعديلات على سياسة الخصوصية</h2>
+    <p>
+      قد نقوم بتحديث هذه السياسة من وقت لآخر،
+      وعند حدوث أي تغيير سنعدّل تاريخ "آخر تحديث" في الأعلى.
+      استمرارك في استخدام التطبيق بعد أي تعديل يعني موافقتك على السياسة المحدّثة.
+    </p>
+
+    <h2>٨. للتواصل معنا</h2>
+    <p>إذا كان لديك أي سؤال حول سياسة الخصوصية أو حول تطبيق ويكند السعودية، يمكنك التواصل معنا عبر:</p>
+    <ul>
+      <li><strong>المطوِّرة:</strong> شيماء الخالدي</li>
+      <li><strong>الموقع:</strong> <a href="https://shaima.dev" target="_blank" rel="noopener noreferrer">https://shaima.dev</a></li>
+      <li><strong>البريد الإلكتروني:</strong> <a href="mailto:co.87s@hotmail.com">co.87s@hotmail.com</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
