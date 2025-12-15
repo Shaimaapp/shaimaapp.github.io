@@ -315,6 +315,29 @@
             margin-top: 6px;
         }
 
+        .app-links {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .app-store-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(245,192,66,0.55);
+            background: rgba(245,192,66,0.08);
+            color: var(--accent-soft);
+        }
+        .app-store-link:hover {
+            border-color: rgba(245,192,66,0.85);
+            background: rgba(245,192,66,0.12);
+        }
+
         /* Contact */
         .contact-box {
             background: rgba(9,3,20,0.95);
@@ -436,8 +459,8 @@
                 <a href="#apps-ar">التطبيقات</a>
                 <a href="#contact-ar">تواصل واقتراحات</a>
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="ar">AR</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="ar" type="button">AR</button>
+                    <button class="lang-btn" data-lang="en" type="button">EN</button>
                 </div>
             </nav>
         </header>
@@ -449,7 +472,7 @@
                 </h1>
                 <p class="hero-subtitle">
                     نركّز على التواصل، اللعب، وتجارب يومية
-                 تجعل حياة المستخدم ألطف وأسهل .
+                    تجعل حياة المستخدم ألطف وأسهل .
                 </p>
                 <div class="hero-tags">
                     <span class="tag tag-gold">تطبيقات iOS</span>
@@ -458,10 +481,10 @@
                     <span class="tag">تركيز على السوق العربي</span>
                 </div>
                 <div class="hero-buttons">
-                    <button class="btn-main" onclick="document.getElementById('apps-ar').scrollIntoView({behavior:'smooth'})">
+                    <button class="btn-main" onclick="document.getElementById('apps-ar').scrollIntoView({behavior:'smooth'})" type="button">
                         استكشف تطبيقاتي
                     </button>
-                    <button class="btn-secondary" onclick="document.getElementById('contact-ar').scrollIntoView({behavior:'smooth'})">
+                    <button class="btn-secondary" onclick="document.getElementById('contact-ar').scrollIntoView({behavior:'smooth'})" type="button">
                         أرسل فكرة أو اقتراح
                     </button>
                 </div>
@@ -485,20 +508,19 @@
         </section>
 
         <section id="about-ar">
-            <p class="section-subtitle">نبذة سريعة عنّي وماذا أقدّم   .</p>
+            <p class="section-subtitle">نبذة سريعة عنّي وماذا أقدّم.</p>
             <p class="about-text">
-                 صانعة محتوى رقمي ومطوّرة تطبيقات تهتم بالتواصل، والتجارب اليومية البسيطة
-                التي تترك أثر. خلفيتي تمتد بين التعليم، الكتابة ، البرمجة ، والتصميم، وهذا ينعكس في التطبيقات
-             التي أطلقها؛ تطبيقات سهلة الاستخدام، مبهجة بصريًا، وقريبة من روح المستخدم 
+                صانعة محتوى رقمي ومطوّرة تطبيقات تهتم بالتواصل، والتجارب اليومية البسيطة
+                التي تترك أثر. خلفيتي تمتد بين التعليم، الكتابة، البرمجة، والتصميم، وهذا ينعكس في التطبيقات
+                التي أطلقها؛ تطبيقات سهلة الاستخدام، مبهجة بصريًا، وقريبة من روح المستخدم.
                 <br><br>
-                أركّز حاليًا على بناء منتجات رقمية يمكن تطويرها في عالم السوشال ميديا والألعاب البسيطةوتسهيل حياة المستخدم.
+                أركّز حاليًا على بناء منتجات رقمية يمكن تطويرها في عالم السوشال ميديا والألعاب البسيطة وتسهيل حياة المستخدم.
             </p>
         </section>
 
         <section id="apps-ar">
             <h2 class="section-title">التطبيقات التي أنشأتها</h2>
-            <p class="section-subtitle">
-            </p>
+            <p class="section-subtitle"></p>
 
             <div class="apps-grid">
                 <!-- MoodMatch -->
@@ -515,6 +537,16 @@
                         تطبيق يلتقط المزاج اليومي من خلال الصور والتعليقات القصيرة، ليوثّق اللحظات الحقيقية
                         بعيدًا عن الفلتر المثالي، مع هوية بصرية بنفسجية ذهبية مميّزة.
                     </p>
+
+                    <!-- ✅ Updated App Store link -->
+                    <div class="app-links">
+                        <a class="app-store-link"
+                           href="https://apps.apple.com/us/app/moodmatch/id6756211501"
+                           target="_blank"
+                           rel="noopener">
+                            عرض على App Store ↗
+                        </a>
+                    </div>
                 </article>
 
                 <!-- اربطها -->
@@ -569,8 +601,7 @@
         </section>
 
         <footer>
-            © 2025 Shaima – جميع الحقوق محفوظة.  
-             💜
+            © 2025 Shaima – جميع الحقوق محفوظة. 💜
         </footer>
     </div>
 
@@ -589,8 +620,8 @@
                 <a href="#apps-en">Apps</a>
                 <a href="#contact-en">Contact</a>
                 <div class="lang-switch">
-                    <button class="lang-btn" data-lang="ar">AR</button>
-                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar" type="button">AR</button>
+                    <button class="lang-btn active" data-lang="en" type="button">EN</button>
                 </div>
             </nav>
         </header>
@@ -611,10 +642,10 @@
                     <span class="tag">Arabic-speaking markets</span>
                 </div>
                 <div class="hero-buttons">
-                    <button class="btn-main" onclick="document.getElementById('apps-en').scrollIntoView({behavior:'smooth'})">
+                    <button class="btn-main" onclick="document.getElementById('apps-en').scrollIntoView({behavior:'smooth'})" type="button">
                         View my apps
                     </button>
-                    <button class="btn-secondary" onclick="document.getElementById('contact-en').scrollIntoView({behavior:'smooth'})">
+                    <button class="btn-secondary" onclick="document.getElementById('contact-en').scrollIntoView({behavior:'smooth'})" type="button">
                         Share an idea
                     </button>
                 </div>
@@ -623,9 +654,10 @@
             <div class="hero-right">
                 <div>
                     <div class="hero-stat-label">Vision</div>
-                    <div class="hero-stat-main"> apps, big emotional impact.</div>
+                    <div class="hero-stat-main">Small apps, big emotional impact.</div>
                     <div class="hero-stat-chip">
                         <span>💜</span>
+                    </div>
                 </div>
                 <div>
                     <div class="hero-stat-label">What I believe</div>
@@ -639,16 +671,15 @@
 
         <section id="about-en">
             <h2 class="section-title">Who is Shaimaa?</h2>
-            <p class="section-subtitle">A short introduction to what I do through Shaimaa .</p>
+            <p class="section-subtitle">A short introduction to what I do through Shaimaa.</p>
             <p class="about-text">
                 I'm Shaimaa – a digital creator and app developer who cares about social media,
                 and everyday experiences that leave a subtle emotional mark. My background spans education,
                 writing, and design, and that blend shows up in the apps I build: easy to use, visually warm,
-                and emotionally.
+                and emotionally meaningful.
                 <br><br>
-                My focus now is building digital products that can later grow into investable,
-                interested in emotional, social, 
-            and lifestyle-focused experiences.
+                My focus now is building digital products that can grow into investable, lifestyle-focused experiences
+                with an emotional and social core.
             </p>
         </section>
 
@@ -674,6 +705,16 @@
                         keeping things authentic and away from “perfect filter” pressure – all wrapped in
                         a bold purple–gold identity.
                     </p>
+
+                    <!-- ✅ Updated App Store link -->
+                    <div class="app-links">
+                        <a class="app-store-link"
+                           href="https://apps.apple.com/us/app/moodmatch/id6756211501"
+                           target="_blank"
+                           rel="noopener">
+                            View on the App Store ↗
+                        </a>
+                    </div>
                 </article>
 
                 <!-- Arbot-ha -->
@@ -728,37 +769,38 @@
         </section>
 
         <footer>
-            © 2025 Shaimaa  – All rights reserved.  
+            © 2025 Shaimaa – All rights reserved.
         </footer>
     </div>
 
 </div>
 
 <script>
-    // Language toggle
+    // Language toggle (keeps both headers in sync)
     const langButtons = document.querySelectorAll('.lang-btn');
     const langAr = document.getElementById('lang-ar');
     const langEn = document.getElementById('lang-en');
 
-    langButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const target = btn.dataset.lang;
-
-            langButtons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            if (target === 'ar') {
-                langAr.classList.add('active');
-                langEn.classList.remove('active');
-                document.documentElement.setAttribute('dir', 'rtl');
-                document.documentElement.setAttribute('lang', 'ar');
-            } else {
-                langEn.classList.add('active');
-                langAr.classList.remove('active');
-                document.documentElement.setAttribute('dir', 'ltr');
-                document.documentElement.setAttribute('lang', 'en');
-            }
+    function setLang(target) {
+        langButtons.forEach(b => {
+            b.classList.toggle('active', b.dataset.lang === target);
         });
+
+        if (target === 'ar') {
+            langAr.classList.add('active');
+            langEn.classList.remove('active');
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', 'ar');
+        } else {
+            langEn.classList.add('active');
+            langAr.classList.remove('active');
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', 'en');
+        }
+    }
+
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
 </script>
 
