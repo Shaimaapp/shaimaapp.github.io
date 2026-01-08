@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مطوّرو 87 | 87 Developer</title>
+  <title>Shaima – شيماء | App Developer</title>
 
   <style>
     :root {
@@ -30,7 +30,6 @@
 
     .page-wrapper { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
 
-    /* Header */
     header {
       display: flex;
       align-items: center;
@@ -49,23 +48,15 @@
       align-items: center;
       justify-content: center;
       font-weight: 900;
-      font-size: 16px;
+      font-size: 18px;
       color: #12061f;
       box-shadow: 0 0 18px rgba(245,192,66,0.7);
-      letter-spacing: 0.5px;
     }
 
     .brand-text-main { font-weight: 800; font-size: 18px; }
     .brand-text-sub { font-size: 13px; color: var(--text-muted); }
 
-    nav {
-      display: flex;
-      gap: 18px;
-      font-size: 14px;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
+    nav { display: flex; gap: 18px; font-size: 14px; align-items: center; flex-wrap: wrap; }
 
     nav a { position: relative; color: var(--text-muted); }
     nav a::after {
@@ -103,7 +94,6 @@
       font-weight: 700;
     }
 
-    /* Hero */
     .hero {
       border-radius: 24px;
       padding: 28px 22px;
@@ -127,11 +117,7 @@
       font-weight: 900;
     }
 
-    .hero-subtitle {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-bottom: 18px;
-    }
+    .hero-subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 18px; }
 
     .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 
@@ -184,7 +170,7 @@
     }
 
     .hero-stat-label { font-size: 12px; color: var(--text-muted); }
-    .hero-stat-main { font-size: 18px; font-weight: 800; }
+    .hero-stat-main { font-size: 18px; font-weight: 900; }
 
     .hero-stat-chip {
       display: inline-flex;
@@ -198,13 +184,12 @@
       margin-top: 4px;
     }
 
-    /* Sections */
     section { margin-bottom: 36px; }
+
     .section-title { font-size: 18px; margin-bottom: 10px; }
     .section-subtitle { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
     .about-text { font-size: 14px; color: var(--text-muted); }
 
-    /* Apps */
     .apps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -229,12 +214,7 @@
       margin-bottom: 6px;
     }
 
-    .app-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 6px;
-    }
+    .app-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 
     .app-logo {
       width: 44px;
@@ -243,17 +223,13 @@
       object-fit: cover;
       background: #222;
       border: 1px solid rgba(255,255,255,0.10);
+      display: block;
     }
 
     .app-title { font-size: 15px; margin-bottom: 2px; }
     .app-desc { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
 
-    .app-links {
-      margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    .app-links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; }
 
     .app-store-link {
       display: inline-flex;
@@ -271,7 +247,6 @@
       background: rgba(245,192,66,0.12);
     }
 
-    /* Contact */
     .contact-box {
       background: rgba(9,3,20,0.95);
       border-radius: 18px;
@@ -283,7 +258,7 @@
     }
 
     .contact-label { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
-    .contact-email { font-size: 14px; font-weight: 800; color: var(--accent-soft); }
+    .contact-email { font-size: 14px; font-weight: 900; color: var(--accent-soft); }
     .contact-note { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
 
     .contact-form { display: grid; gap: 8px; font-size: 13px; }
@@ -304,14 +279,8 @@
     .contact-form textarea::placeholder { color: #7e7898; }
     .contact-form button { justify-self: flex-start; }
 
-    footer {
-      margin-top: 40px;
-      font-size: 11px;
-      text-align: center;
-      color: var(--text-muted);
-    }
+    footer { margin-top: 40px; font-size: 11px; text-align: center; color: var(--text-muted); }
 
-    /* Language containers */
     .lang { display: none; }
     .lang.active { display: block; }
 
@@ -328,447 +297,420 @@
 </head>
 
 <body>
-<div class="page-wrapper">
+  <div class="page-wrapper">
 
-  <!-- ARABIC VERSION -->
-  <div class="lang lang-ar active" id="lang-ar">
-    <header>
-      <div class="brand">
-        <div class="brand-logo">87</div>
+    <!-- ARABIC VERSION -->
+    <div class="lang lang-ar active" id="lang-ar">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">ش</div>
+          <div>
+            <div class="brand-text-main">Shaima</div>
+            <div class="brand-text-sub">تجارب رقمية تُصنع بحب</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#about-ar">من أنا</a>
+          <a href="#apps-ar">التطبيقات</a>
+          <a href="#contact-ar">تواصل</a>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="ar" type="button">AR</button>
+            <button class="lang-btn" data-lang="en" type="button">EN</button>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero">
         <div>
-          <div class="brand-text-main">مطوّرو 87</div>
-          <div class="brand-text-sub">تجارب رقمية نطوّرها بحب</div>
+          <h1 class="hero-title">
+            شيماء <span class="hero-highlight">مطوّرة تطبيقات</span> وصانعة تجارب رقمية.
+          </h1>
+          <p class="hero-subtitle">
+            أركّز على التواصل، اللعب، وتجارب يومية بسيطة تجعل حياة المستخدم ألطف وأسهل.
+          </p>
+          <div class="hero-tags">
+            <span class="tag tag-gold">تطبيقات iOS</span>
+            <span class="tag">تطبيقات ترفيهية وإبداعية</span>
+            <span class="tag">تصميم تجربة مستخدم</span>
+            <span class="tag">تركيز على السوق العربي</span>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn-main" type="button"
+              onclick="document.getElementById('apps-ar').scrollIntoView({behavior:'smooth'})">
+              استكشف تطبيقاتي
+            </button>
+            <button class="btn-secondary" type="button"
+              onclick="document.getElementById('contact-ar').scrollIntoView({behavior:'smooth'})">
+              أرسل فكرة أو اقتراح
+            </button>
+          </div>
         </div>
-      </div>
-      <nav>
-        <a href="#about-ar">من نحن</a>
-        <a href="#apps-ar">التطبيقات</a>
-        <a href="#contact-ar">تواصل واقتراحات</a>
-        <div class="lang-switch">
-          <button class="lang-btn active" data-lang="ar" type="button">AR</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
-        </div>
-      </nav>
-    </header>
 
-    <section class="hero">
-      <div>
-        <h1 class="hero-title">
-          نحن <span class="hero-highlight">مطوّرو 87</span> نصنع تجارب رقمية دافئة.
-        </h1>
-        <p class="hero-subtitle">
-          نركّز على التواصل، اللعب، واللحظات اليومية الصغيرة
-          التي تجعل تجربة المستخدم ألطف وأسهل.
+        <div class="hero-right">
+          <div>
+            <div class="hero-stat-label">رؤيتي</div>
+            <div class="hero-stat-main">تطبيقات بسيطة… أثر حقيقي.</div>
+            <div class="hero-stat-chip"><span>💜</span><span>صادق • بسيط • ممتع</span></div>
+          </div>
+          <div>
+            <div class="hero-stat-label">ما أؤمن به</div>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+              كل تطبيق أصمّمه هو لحظة حقيقية: مزاج، لعبة سريعة، أو مساحة بسيطة للتعبير — بدون تصنّع.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-ar">
+        <h2 class="section-title">نبذة عنّي</h2>
+        <p class="section-subtitle">من أنا وماذا أقدّم.</p>
+        <p class="about-text">
+          أنا شيماء — مطوّرة تطبيقات وصانعة محتوى رقمي أهتم بالتواصل، والتجارب اليومية الصغيرة التي تترك أثر.
+          خلفيتي تمتد بين التعليم، الكتابة، البرمجة، والتصميم، وهذا ينعكس في التطبيقات التي أطلقها:
+          تطبيقات سهلة الاستخدام، مبهجة بصريًا، وقريبة من روح المستخدم.
+          <br><br>
+          أركّز حاليًا على بناء منتجات رقمية قابلة للنمو في عالم السوشال ميديا، الألعاب الخفيفة، وتجارب تُسهّل حياة المستخدم.
         </p>
-        <div class="hero-tags">
-          <span class="tag tag-gold">تطبيقات iOS</span>
-          <span class="tag">تطبيقات ترفيهية وإبداعية</span>
-          <span class="tag">تصميم تجربة مستخدم</span>
-          <span class="tag">تركيز على السوق العربي</span>
-        </div>
-        <div class="hero-buttons">
-          <button class="btn-main" type="button"
-            onclick="document.getElementById('apps-ar').scrollIntoView({behavior:'smooth'})">
-            استكشف تطبيقاتنا
-          </button>
-          <button class="btn-secondary" type="button"
-            onclick="document.getElementById('contact-ar').scrollIntoView({behavior:'smooth'})">
-            ارسل فكرة أو اقتراح
-          </button>
-        </div>
-      </div>
+      </section>
 
-      <div class="hero-right">
-        <div>
-          <div class="hero-stat-label">رؤيتنا</div>
-          <div class="hero-stat-main">تطبيقات صغيرة… أثر كبير.</div>
-          <div class="hero-stat-chip"><span>💜</span><span>صادق • بسيط • ممتع</span></div>
-        </div>
-        <div>
-          <div class="hero-stat-label">ما نؤمن به</div>
-          <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
-            كل تطبيق نطوّره هو لحظة حقيقية: مزاج، لعبة سريعة،
-            أو مساحة بسيطة للتعبير — بدون تصنّع.
-          </p>
-        </div>
-      </div>
-    </section>
+      <section id="apps-ar">
+        <h2 class="section-title">التطبيقات التي أنشأتها</h2>
+        <p class="section-subtitle">روابط مباشرة إلى App Store.</p>
 
-    <section id="about-ar">
-      <h2 class="section-title">نبذة عنّا</h2>
-      <p class="section-subtitle">من نحن وماذا نطوّر.</p>
-      <p class="about-text">
-        نحن فريق 87 — نطوّر تطبيقات وتجارب رقمية تركّز على التواصل، اللعب، واللحظات اليومية الصغيرة
-        التي تترك أثرًا لطيفًا. خلفيتنا تجمع بين البرمجة، التصميم، والكتابة، وهذا ينعكس في منتجاتنا:
-        تطبيقات سهلة الاستخدام، مبهجة بصريًا، وقريبة من المستخدم.
-        <br><br>
-        نركّز حاليًا على بناء منتجات رقمية قابلة للنمو في عالم السوشال ميديا، الألعاب الخفيفة،
-        وتجارب تساعد المستخدم على اكتشاف شيء جديد كل يوم.
-      </p>
-    </section>
+        <div class="apps-grid">
 
-    <section id="apps-ar">
-      <h2 class="section-title">التطبيقات التي أنشأناها</h2>
-      <p class="section-subtitle">لمحة عن التطبيقات التي أطلقناها حتى الآن.</p>
-
-      <div class="apps-grid">
-
-        <!-- MoodMatch -->
-        <article class="app-card">
-          <div class="app-pill">Social • Mood • Camera</div>
-          <div class="app-header">
-            <img id="moodmatchIconAr" class="app-logo" alt="شعار MoodMatch">
-            <div>
-              <h3 class="app-title">MoodMatch</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">المزاج واللحظات الحقيقية</div>
+          <!-- MoodMatch -->
+          <article class="app-card">
+            <div class="app-pill">Social • Mood • Camera</div>
+            <div class="app-header">
+              <img id="moodmatchIconAr" class="app-logo" alt="شعار MoodMatch">
+              <div>
+                <h3 class="app-title">MoodMatch</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">المزاج واللحظات الحقيقية</div>
+              </div>
             </div>
-          </div>
-          <p class="app-desc">
-            نلتقط المزاج اليومي عبر الصور والتعليقات القصيرة، ونوثّق اللحظات كما هي
-            — بعيدًا عن ضغط “المثالية” — بهوية بنفسجية ذهبية مميّزة.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/moodmatch/id6756211501" target="_blank" rel="noopener">
-              عرض على App Store ↗
-            </a>
-          </div>
-        </article>
-
-        <!-- Zhab -->
-        <article class="app-card">
-          <div class="app-pill">Events • Activities • Saudi</div>
-          <div class="app-header">
-            <img id="zhabIconAr" class="app-logo" alt="شعار زهاب">
-            <div>
-              <h3 class="app-title">زهاب – Zhab</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">تجمعات وأنشطة</div>
+            <p class="app-desc">
+              تطبيق يلتقط المزاج اليومي عبر الصور والتعليقات القصيرة، ويوثّق اللحظات كما هي — بعيدًا عن ضغط “المثالية”.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/moodmatch/id6756211501" target="_blank" rel="noopener">
+                عرض على App Store ↗
+              </a>
             </div>
-          </div>
-          <p class="app-desc">
-            منصة تساعد المستخدمين على اكتشاف الأنشطة والتجمعات بسهولة،
-            مع تجربة واضحة وسريعة للوصول إلى الفعاليات والاقتراحات حسب الاهتمامات.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/zhab/id6755693717" target="_blank" rel="noopener">
-              عرض على App Store ↗
-            </a>
-          </div>
-        </article>
+          </article>
 
-        <!-- Arbot-ha -->
-        <article class="app-card">
-          <div class="app-pill">Game • Arabic Words</div>
-          <div class="app-header">
-            <img id="arbothaIconAr" class="app-logo" alt="شعار اربطها">
-            <div>
-              <h3 class="app-title">اربطها</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">لعبة الروابط والكلمات</div>
+          <!-- Zhab -->
+          <article class="app-card">
+            <div class="app-pill">Events • Activities • Saudi</div>
+            <div class="app-header">
+              <img id="zhabIconAr" class="app-logo" alt="شعار زهاب">
+              <div>
+                <h3 class="app-title">Zhab – زهاب</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">تجمعات وأنشطة</div>
+              </div>
             </div>
+            <p class="app-desc">
+              منصة تساعد المستخدمين على اكتشاف الأنشطة والتجمعات بسهولة، مع تجربة واضحة وسريعة للوصول إلى الفعاليات حسب الاهتمامات.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/zhab/id6755693717" target="_blank" rel="noopener">
+                عرض على App Store ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Arbot-ha -->
+          <article class="app-card">
+            <div class="app-pill">Game • Arabic Words</div>
+            <div class="app-header">
+              <img id="arbothaIconAr" class="app-logo" alt="شعار اربطها">
+              <div>
+                <h3 class="app-title">اربطها</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">لعبة الروابط والكلمات</div>
+              </div>
+            </div>
+            <p class="app-desc">
+              لعبة خفيفة تعتمد على ربط كلمات أو عناصر بطريقة ذكية وسريعة، بتصميم مرح يركز على البساطة والمتعة للجميع.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/%D8%A7%D8%B1%D8%A8%D8%B7%D9%87%D8%A7/id6755126667" target="_blank" rel="noopener">
+                عرض على App Store ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="contact-ar">
+        <h2 class="section-title">تواصل</h2>
+        <p class="section-subtitle">اقتراحات، تعاون، أو ملاحظات—يسعدني أسمع منك.</p>
+
+        <div class="contact-box">
+          <div>
+            <div class="contact-label">البريد الإلكتروني</div>
+            <div class="contact-email">co.87s@hotmail.com</div>
+            <p class="contact-note">اكتب لي أي وقت.</p>
           </div>
-          <p class="app-desc">
-            لعبة خفيفة تعتمد على ربط كلمات أو عناصر بطريقة ذكية وسريعة،
-            بتصميم مرح يركز على البساطة والمتعة لجميع الأعمار.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/%D8%A7%D8%B1%D8%A8%D8%B7%D9%87%D8%A7/id6755126667" target="_blank" rel="noopener">
-              عرض على App Store ↗
-            </a>
+
+          <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
+            <div>
+              <label for="name-ar">الاسم (اختياري)</label>
+              <input id="name-ar" name="name" type="text" placeholder="اسمك" />
+            </div>
+            <div>
+              <label for="topic-ar">عن أي تطبيق؟</label>
+              <input id="topic-ar" name="topic" type="text" placeholder="MoodMatch / زهاب / اربطها / فكرة جديدة..." />
+            </div>
+            <div>
+              <label for="message-ar">الرسالة</label>
+              <textarea id="message-ar" name="message" placeholder="اكتب رسالتك هنا"></textarea>
+            </div>
+            <button type="submit" class="btn-main">إرسال</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>© 2025 Shaima – جميع الحقوق محفوظة. 💜</footer>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div class="lang lang-en" id="lang-en">
+      <header>
+        <div class="brand">
+          <div class="brand-logo">S</div>
+          <div>
+            <div class="brand-text-main">Shaima</div>
+            <div class="brand-text-sub">Digital experiences with heart</div>
           </div>
-        </article>
+        </div>
+        <nav>
+          <a href="#about-en">About</a>
+          <a href="#apps-en">Apps</a>
+          <a href="#contact-en">Contact</a>
+          <div class="lang-switch">
+            <button class="lang-btn" data-lang="ar" type="button">AR</button>
+            <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          </div>
+        </nav>
+      </header>
 
-      </div>
-    </section>
-
-    <section id="contact-ar">
-      <h2 class="section-title">تواصل واقتراحات</h2>
-      <p class="section-subtitle">
-        عندك فكرة لتطبيق؟ ملاحظة؟ أو تعاون؟ يسعدنا نسمع منك.
-      </p>
-
-      <div class="contact-box">
+      <section class="hero">
         <div>
-          <div class="contact-label">البريد الإلكتروني المباشر</div>
-          <div class="contact-email">co.87s@hotmail.com</div>
-          <p class="contact-note">
-            استخدم هذا البريد لأي اقتراح، تعاون، أو استفسار حول تطبيقاتنا الحالية أو مشاريعنا القادمة.
+          <h1 class="hero-title">
+            Shaima, an <span class="hero-highlight">app developer</span> crafting warm digital moments.
+          </h1>
+          <p class="hero-subtitle">
+            I build simple yet meaningful apps focused on mood, play, and everyday experiences—designed for our region.
           </p>
+          <div class="hero-tags">
+            <span class="tag tag-gold">iOS Apps</span>
+            <span class="tag">Social & playful concepts</span>
+            <span class="tag">UX-first design</span>
+            <span class="tag">Arabic-speaking markets</span>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn-main" type="button"
+              onclick="document.getElementById('apps-en').scrollIntoView({behavior:'smooth'})">
+              View my apps
+            </button>
+            <button class="btn-secondary" type="button"
+              onclick="document.getElementById('contact-en').scrollIntoView({behavior:'smooth'})">
+              Share an idea
+            </button>
+          </div>
         </div>
 
-        <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
+        <div class="hero-right">
           <div>
-            <label for="name-ar">الاسم (اختياري)</label>
-            <input id="name-ar" name="name" type="text" placeholder="اكتب اسمك الأول أو لقبك" />
+            <div class="hero-stat-label">Vision</div>
+            <div class="hero-stat-main">Small apps, real impact.</div>
+            <div class="hero-stat-chip"><span>💜</span><span>Honest • Simple • Fun</span></div>
           </div>
           <div>
-            <label for="topic-ar">عن أي تطبيق تتحدث؟</label>
-            <input id="topic-ar" name="topic" type="text" placeholder="MoodMatch / زهاب / اربطها / فكرة جديدة..." />
+            <div class="hero-stat-label">What I believe</div>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+              Every app I build is a short honest moment—a mood snapshot, a quick game, or a simple space to express something real.
+            </p>
           </div>
-          <div>
-            <label for="message-ar">الفكرة أو الرسالة</label>
-            <textarea id="message-ar" name="message" placeholder="اكتب رسالتك هنا"></textarea>
-          </div>
-          <button type="submit" class="btn-main">إرسال من خلال البريد</button>
-        </form>
-      </div>
+        </div>
+      </section>
 
-      <footer>© 2025 مطوّرو 87 – جميع الحقوق محفوظة. 💜</footer>
-    </section>
+      <section id="about-en">
+        <h2 class="section-title">About me</h2>
+        <p class="section-subtitle">A quick introduction to what I build.</p>
+        <p class="about-text">
+          I'm Shaima — a digital creator and app developer who cares about connection and small everyday experiences that leave a subtle emotional mark.
+          My background spans education, writing, design, and engineering—this blend shows up in the apps I build: easy to use, visually warm, and emotionally meaningful.
+          <br><br>
+          Right now, I’m focused on building products that can grow in social, lightweight games, and lifestyle experiences.
+        </p>
+      </section>
+
+      <section id="apps-en">
+        <h2 class="section-title">Apps I’ve created</h2>
+        <p class="section-subtitle">Direct links to the App Store.</p>
+
+        <div class="apps-grid">
+
+          <article class="app-card">
+            <div class="app-pill">Social • Mood • Camera</div>
+            <div class="app-header">
+              <img id="moodmatchIconEn" class="app-logo" alt="MoodMatch icon">
+              <div>
+                <h3 class="app-title">MoodMatch</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">Real-mood social snapshots</div>
+              </div>
+            </div>
+            <p class="app-desc">
+              A mood-focused app that captures how you feel through photos and short captions, staying authentic and away from “perfect filter” pressure.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/moodmatch/id6756211501" target="_blank" rel="noopener">
+                View on the App Store ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-pill">Events • Activities • Saudi</div>
+            <div class="app-header">
+              <img id="zhabIconEn" class="app-logo" alt="Zhab icon">
+              <div>
+                <h3 class="app-title">Zhab</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">Activities & gatherings</div>
+              </div>
+            </div>
+            <p class="app-desc">
+              An activities platform that helps people discover gatherings and things to do quickly—with a clean experience built around interests.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/zhab/id6755693717" target="_blank" rel="noopener">
+                View on the App Store ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-pill">Game • Arabic Words</div>
+            <div class="app-header">
+              <img id="arbothaIconEn" class="app-logo" alt="Arbot-ha icon">
+              <div>
+                <h3 class="app-title">Arbot-ha (اربطها)</h3>
+                <div style="font-size: 12px; color: var(--text-muted);">Links & words mini-game</div>
+              </div>
+            </div>
+            <p class="app-desc">
+              A lightweight Arabic word game built around connecting items and words quickly and intuitively, with playful visuals designed for all ages.
+            </p>
+            <div class="app-links">
+              <a class="app-store-link" href="https://apps.apple.com/us/app/%D8%A7%D8%B1%D8%A8%D8%B7%D9%87%D8%A7/id6755126667" target="_blank" rel="noopener">
+                View on the App Store ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="contact-en">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Ideas, feedback, or collaborations — I’d love to hear from you.</p>
+
+        <div class="contact-box">
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-email">co.87s@hotmail.com</div>
+            <p class="contact-note">Reach out anytime.</p>
+          </div>
+
+          <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
+            <div>
+              <label for="name-en">Name (optional)</label>
+              <input id="name-en" name="name" type="text" placeholder="Your name" />
+            </div>
+            <div>
+              <label for="topic-en">Which app?</label>
+              <input id="topic-en" name="topic" type="text" placeholder="MoodMatch / Zhab / Arbot-ha / new idea..." />
+            </div>
+            <div>
+              <label for="message-en">Message</label>
+              <textarea id="message-en" name="message" placeholder="Write your message here"></textarea>
+            </div>
+            <button type="submit" class="btn-main">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>© 2025 Shaima – All rights reserved.</footer>
+    </div>
+
   </div>
 
+  <script>
+    // Language toggle
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const langAr = document.getElementById('lang-ar');
+    const langEn = document.getElementById('lang-en');
 
-  <!-- ENGLISH VERSION -->
-  <div class="lang lang-en" id="lang-en">
-    <header>
-      <div class="brand">
-        <div class="brand-logo">87</div>
-        <div>
-          <div class="brand-text-main">87 Developer</div>
-          <div class="brand-text-sub">Digital experiences, built with heart</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about-en">About</a>
-        <a href="#apps-en">Apps</a>
-        <a href="#contact-en">Contact</a>
-        <div class="lang-switch">
-          <button class="lang-btn" data-lang="ar" type="button">AR</button>
-          <button class="lang-btn active" data-lang="en" type="button">EN</button>
-        </div>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div>
-        <h1 class="hero-title">
-          We are <span class="hero-highlight">87 Developer</span>, crafting warm digital experiences.
-        </h1>
-        <p class="hero-subtitle">
-          We build apps focused on connection, play, and everyday moments —
-          designed especially for Arabic-speaking markets.
-        </p>
-        <div class="hero-tags">
-          <span class="tag tag-gold">iOS Apps</span>
-          <span class="tag">Social & playful concepts</span>
-          <span class="tag">UX-first design</span>
-          <span class="tag">Arabic-speaking markets</span>
-        </div>
-        <div class="hero-buttons">
-          <button class="btn-main" type="button"
-            onclick="document.getElementById('apps-en').scrollIntoView({behavior:'smooth'})">
-            View our apps
-          </button>
-          <button class="btn-secondary" type="button"
-            onclick="document.getElementById('contact-en').scrollIntoView({behavior:'smooth'})">
-            Share an idea
-          </button>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div>
-          <div class="hero-stat-label">Vision</div>
-          <div class="hero-stat-main">Small apps, big impact.</div>
-          <div class="hero-stat-chip"><span>💜</span><span>Honest • Simple • Fun</span></div>
-        </div>
-        <div>
-          <div class="hero-stat-label">What we believe</div>
-          <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
-            Every app we build is a short honest moment — a mood snapshot, a quick game,
-            or a simple space to express something real.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-en">
-      <h2 class="section-title">About us</h2>
-      <p class="section-subtitle">A quick intro to what we build as 87.</p>
-      <p class="about-text">
-        We are 87 — a small team creating digital products that focus on connection, play, and everyday moments.
-        Our background blends engineering, design, and writing, which shows up in everything we ship:
-        easy to use, visually warm, and emotionally meaningful.
-        <br><br>
-        Right now, we’re focused on building products that can scale in social, lightweight games, and lifestyle experiences.
-      </p>
-    </section>
-
-    <section id="apps-en">
-      <h2 class="section-title">Apps we’ve created</h2>
-      <p class="section-subtitle">A glimpse of what we’ve shipped so far.</p>
-
-      <div class="apps-grid">
-
-        <article class="app-card">
-          <div class="app-pill">Social • Mood • Camera</div>
-          <div class="app-header">
-            <img id="moodmatchIconEn" class="app-logo" alt="MoodMatch icon">
-            <div>
-              <h3 class="app-title">MoodMatch</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">Real-mood social snapshots</div>
-            </div>
-          </div>
-          <p class="app-desc">
-            A mood-focused app that captures how you feel through photos and short captions,
-            staying authentic and away from “perfect filter” pressure.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/moodmatch/id6756211501" target="_blank" rel="noopener">
-              View on the App Store ↗
-            </a>
-          </div>
-        </article>
-
-        <article class="app-card">
-          <div class="app-pill">Events • Activities • Saudi</div>
-          <div class="app-header">
-            <img id="zhabIconEn" class="app-logo" alt="Zhab icon">
-            <div>
-              <h3 class="app-title">Zhab</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">Activities & gatherings</div>
-            </div>
-          </div>
-          <p class="app-desc">
-            An activities platform that helps people discover gatherings and things to do quickly —
-            with a clean experience built around interests.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/zhab/id6755693717" target="_blank" rel="noopener">
-              View on the App Store ↗
-            </a>
-          </div>
-        </article>
-
-        <article class="app-card">
-          <div class="app-pill">Game • Arabic Words</div>
-          <div class="app-header">
-            <img id="arbothaIconEn" class="app-logo" alt="Arbot-ha icon">
-            <div>
-              <h3 class="app-title">Arbot-ha (اربطها)</h3>
-              <div style="font-size: 12px; color: var(--text-muted);">Links & words mini-game</div>
-            </div>
-          </div>
-          <p class="app-desc">
-            A lightweight Arabic word game built around connecting items and words quickly and intuitively,
-            with playful visuals designed for all ages.
-          </p>
-          <div class="app-links">
-            <a class="app-store-link" href="https://apps.apple.com/us/app/%D8%A7%D8%B1%D8%A8%D8%B7%D9%87%D8%A7/id6755126667" target="_blank" rel="noopener">
-              View on the App Store ↗
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="contact-en">
-      <h2 class="section-title">Contact & Ideas</h2>
-      <p class="section-subtitle">Have an idea, feedback, or collaboration in mind? We’d love to hear from you.</p>
-
-      <div class="contact-box">
-        <div>
-          <div class="contact-label">Direct email</div>
-          <div class="contact-email">co.87s@hotmail.com</div>
-          <p class="contact-note">Use this email for suggestions, collaborations, or questions about our apps.</p>
-        </div>
-
-        <form class="contact-form" action="mailto:co.87s@hotmail.com" method="post" enctype="text/plain">
-          <div>
-            <label for="name-en">Name (optional)</label>
-            <input id="name-en" name="name" type="text" placeholder="Your first name or nickname" />
-          </div>
-          <div>
-            <label for="topic-en">Which app are you talking about?</label>
-            <input id="topic-en" name="topic" type="text" placeholder="MoodMatch / Zhab / Arbot-ha / new idea..." />
-          </div>
-          <div>
-            <label for="message-en">Message or idea</label>
-            <textarea id="message-en" name="message" placeholder="Write your message here"></textarea>
-          </div>
-          <button type="submit" class="btn-main">Send via email</button>
-        </form>
-      </div>
-
-      <footer>© 2025 87 Developer – All rights reserved.</footer>
-    </section>
-  </div>
-
-</div>
-
-<script>
-  // ---------- Language toggle ----------
-  const langButtons = document.querySelectorAll('.lang-btn');
-  const langAr = document.getElementById('lang-ar');
-  const langEn = document.getElementById('lang-en');
-
-  function setLang(target) {
-    langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === target));
-    if (target === 'ar') {
-      langAr.classList.add('active');
-      langEn.classList.remove('active');
-      document.documentElement.setAttribute('dir', 'rtl');
-      document.documentElement.setAttribute('lang', 'ar');
-    } else {
-      langEn.classList.add('active');
-      langAr.classList.remove('active');
-      document.documentElement.setAttribute('dir', 'ltr');
-      document.documentElement.setAttribute('lang', 'en');
+    function setLang(target) {
+      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === target));
+      if (target === 'ar') {
+        langAr.classList.add('active');
+        langEn.classList.remove('active');
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+      } else {
+        langEn.classList.add('active');
+        langAr.classList.remove('active');
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+      }
     }
-  }
+    langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
 
-  langButtons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+    // --- App Store icon fetch (Solution 2) with placeholder ---
+    function svgPlaceholder(text) {
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f5c042"/>
+              <stop offset="1" stop-color="#7b3cff"/>
+            </linearGradient>
+          </defs>
+          <rect rx="56" ry="56" width="256" height="256" fill="url(#g)"/>
+          <text x="50%" y="56%" text-anchor="middle"
+                font-family="system-ui, -apple-system, Segoe UI, Tahoma"
+                font-size="86" font-weight="900" fill="#12061f">${text}</text>
+        </svg>`;
+      return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg.trim());
+    }
 
-  // ---------- App Store icon fetch (Solution 2) ----------
-  // Placeholder SVG so nothing breaks even if fetch fails
-  function svgPlaceholder(text) {
-    const svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256">
-        <defs>
-          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#f5c042"/>
-            <stop offset="1" stop-color="#7b3cff"/>
-          </linearGradient>
-        </defs>
-        <rect rx="56" ry="56" width="256" height="256" fill="url(#g)"/>
-        <text x="50%" y="56%" text-anchor="middle"
-              font-family="system-ui, -apple-system, Segoe UI, Tahoma"
-              font-size="86" font-weight="900" fill="#12061f">${text}</text>
-      </svg>`;
-    return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg.trim());
-  }
-
-  async function setAppIcon(appId, elementIds, fallbackText) {
-    // Set placeholder first
-    elementIds.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.src = svgPlaceholder(fallbackText);
-    });
-
-    try {
-      const res = await fetch(`https://itunes.apple.com/lookup?id=${appId}`);
-      const data = await res.json();
-      const icon = data?.results?.[0]?.artworkUrl512 || data?.results?.[0]?.artworkUrl100;
-      if (!icon) return;
-
+    async function setAppIcon(appId, elementIds, fallbackText) {
       elementIds.forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.src = icon;
+        if (el) el.src = svgPlaceholder(fallbackText);
       });
-    } catch (e) {
-      // leave placeholder
+
+      try {
+        const res = await fetch(`https://itunes.apple.com/lookup?id=${appId}`);
+        const data = await res.json();
+        const icon = data?.results?.[0]?.artworkUrl512 || data?.results?.[0]?.artworkUrl100;
+        if (!icon) return;
+
+        elementIds.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.src = icon;
+        });
+      } catch (e) {
+        // keep placeholder
+      }
     }
-  }
 
-  // App IDs
-  const MOODMATCH_ID = "6756211501";
-  const ZHAB_ID      = "6755693717";
-  const ARBOTHA_ID   = "6755126667";
-
-  // Apply to AR + EN (unique IDs)
-  setAppIcon(MOODMATCH_ID, ["moodmatchIconAr", "moodmatchIconEn"], "M");
-  setAppIcon(ZHAB_ID,      ["zhabIconAr", "zhabIconEn"],           "Z");
-  setAppIcon(ARBOTHA_ID,   ["arbothaIconAr", "arbothaIconEn"],     "ر");
-</script>
-
+    setAppIcon("6756211501", ["moodmatchIconAr", "moodmatchIconEn"], "M");
+    setAppIcon("6755693717", ["zhabIconAr", "zhabIconEn"], "Z");
+    setAppIcon("6755126667", ["arbothaIconAr", "arbothaIconEn"], "ر");
+  </script>
 </body>
 </html>
