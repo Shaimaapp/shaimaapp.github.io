@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayTok | Privacy Policy</title>
+  <style>
+    :root {
+      --blue: #12b8e8;
+      --deep-blue: #1453d1;
+      --purple: #5f22c3;
+      --pink: #f5007a;
+      --orange: #ff7a00;
+      --yellow: #ffc400;
+      --bg: #f6f8fc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fbff 0%, #eef4ff 100%);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .top-bar {
+      height: 8px;
+      background: linear-gradient(
+        90deg,
+        var(--blue),
+        var(--deep-blue),
+        var(--purple),
+        var(--pink),
+        var(--orange),
+        var(--yellow)
+      );
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(18,184,232,0.12), rgba(245,0,122,0.10), rgba(255,122,0,0.10));
+      border: 1px solid rgba(20,83,209,0.12);
+      border-radius: 24px;
+      padding: 32px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(20, 83, 209, 0.08);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--blue), var(--deep-blue), var(--pink), var(--orange), var(--yellow));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(95, 34, 195, 0.25);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #111827;
+    }
+
+    .hero p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .notice {
+      margin-top: 18px;
+      background: #fff;
+      border-left: 5px solid var(--pink);
+      padding: 14px 16px;
+      border-radius: 12px;
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 24px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f1f5f9;
+      color: #111827;
+    }
+
+    .card h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: var(--deep-blue);
+      font-size: 18px;
+    }
+
+    .card p, .card li {
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .arabic {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .arabic h3 {
+      color: var(--pink);
+    }
+
+    .contact-box {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(20,83,209,0.06), rgba(245,0,122,0.06));
+      border: 1px dashed rgba(95, 34, 195, 0.25);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .contact-box a {
+      color: var(--deep-blue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 28px;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <section class="hero">
+      <div class="brand">
+        <div class="logo">P</div>
+        <div>
+          <h1>PlayTok Privacy Policy | سياسة الخصوصية</h1>
+          <p>Effective Date / تاريخ السريان: 2026</p>
+        </div>
+      </div>
+
+      <div class="notice">
+        This page explains how PlayTok collects, uses, and protects user information.
+        <br />
+        توضح هذه الصفحة كيف يقوم تطبيق PlayTok بجمع معلومات المستخدم واستخدامها وحمايتها.
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- English -->
+      <div class="card">
+        <h2>Privacy Policy (English)</h2>
+
+        <h3>1. Introduction</h3>
+        <p>
+          Welcome to PlayTok. We respect your privacy and are committed to protecting your personal information.
+          This Privacy Policy explains how we collect, use, store, and protect information when you use our app.
+        </p>
+
+        <h3>2. Information We May Collect</h3>
+        <ul>
+          <li>Account information such as username, email address, and profile details.</li>
+          <li>Content you create or share, such as chat messages, voice room participation, and game activity.</li>
+          <li>Technical information such as device type, operating system, app version, and usage data.</li>
+          <li>Information related to reports, support requests, or communication with us.</li>
+        </ul>
+
+        <h3>3. How We Use Information</h3>
+        <ul>
+          <li>To create and manage user accounts.</li>
+          <li>To provide chat, voice rooms, online games, multiplayer features, and other app services.</li>
+          <li>To improve app performance, user experience, and security.</li>
+          <li>To prevent fraud, abuse, harmful behavior, or violations of our terms.</li>
+          <li>To provide customer support and respond to user inquiries.</li>
+        </ul>
+
+        <h3>4. Sharing of Information</h3>
+        <p>
+          We do not sell personal information. We may share limited information only when necessary:
+        </p>
+        <ul>
+          <li>With service providers that help us operate the app.</li>
+          <li>When required by law, regulation, or legal process.</li>
+          <li>To protect the safety, rights, and security of users or the app.</li>
+        </ul>
+
+        <h3>5. Data Retention</h3>
+        <p>
+          We retain information only for as long as necessary to provide the app, comply with legal obligations,
+          resolve disputes, and enforce our policies.
+        </p>
+
+        <h3>6. Data Security</h3>
+        <p>
+          We use reasonable administrative, technical, and organizational measures to protect your information.
+          However, no system is completely secure, and we cannot guarantee absolute security.
+        </p>
+
+        <h3>7. Children’s Privacy</h3>
+        <p>
+          PlayTok is not intended for children under the age permitted by applicable law. If we learn that we have
+          collected personal information from a child without proper authorization, we will take appropriate steps
+          to delete that information.
+        </p>
+
+        <h3>8. Your Rights</h3>
+        <p>
+          Depending on your location, you may have rights to request access to, correction of, or deletion of your personal information.
+          You may contact us regarding these requests.
+        </p>
+
+        <h3>9. Changes to This Policy</h3>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
+        </p>
+
+        <h3>10. Contact Us</h3>
+        <div class="contact-box">
+          If you have any questions about this Privacy Policy or need support, contact us at:
+          <br /><br />
+          <a href="mailto:co.87s@hotmail.com">co.87s@hotmail.com</a>
+        </div>
+      </div>
+
+      <!-- Arabic -->
+      <div class="card arabic">
+        <h2>سياسة الخصوصية (العربية)</h2>
+
+        <h3>1. المقدمة</h3>
+        <p>
+          مرحبًا بك في PlayTok. نحن نحترم خصوصيتك ونلتزم بحماية معلوماتك الشخصية.
+          توضح سياسة الخصوصية هذه كيفية جمع المعلومات واستخدامها وتخزينها وحمايتها عند استخدامك للتطبيق.
+        </p>
+
+        <h3>2. المعلومات التي قد نقوم بجمعها</h3>
+        <ul>
+          <li>معلومات الحساب مثل اسم المستخدم والبريد الإلكتروني وبيانات الملف الشخصي.</li>
+          <li>المحتوى الذي تقوم بإنشائه أو مشاركته، مثل الرسائل النصية والمشاركة في الغرف الصوتية ونشاط الألعاب.</li>
+          <li>المعلومات التقنية مثل نوع الجهاز ونظام التشغيل وإصدار التطبيق وبيانات الاستخدام.</li>
+          <li>المعلومات المتعلقة بالبلاغات أو طلبات الدعم أو التواصل معنا.</li>
+        </ul>
+
+        <h3>3. كيف نستخدم المعلومات</h3>
+        <ul>
+          <li>لإنشاء وإدارة حسابات المستخدمين.</li>
+          <li>لتوفير خدمات التطبيق مثل المحادثات والغرف الصوتية والألعاب الأونلاين وخصائص اللعب الجماعي.</li>
+          <li>لتحسين أداء التطبيق وتجربة المستخدم ومستوى الأمان.</li>
+          <li>لمنع الاحتيال أو إساءة الاستخدام أو السلوك الضار أو مخالفة الشروط.</li>
+          <li>لتقديم الدعم الفني والرد على استفسارات المستخدمين.</li>
+        </ul>
+
+        <h3>4. مشاركة المعلومات</h3>
+        <p>
+          نحن لا نقوم ببيع المعلومات الشخصية. وقد نشارك معلومات محدودة فقط عند الحاجة في الحالات التالية:
+        </p>
+        <ul>
+          <li>مع مزودي الخدمات الذين يساعدوننا في تشغيل التطبيق.</li>
+          <li>عند وجود التزام قانوني أو تنظيمي أو طلب قانوني رسمي.</li>
+          <li>لحماية سلامة وحقوق وأمن المستخدمين أو التطبيق.</li>
+        </ul>
+
+        <h3>5. الاحتفاظ بالبيانات</h3>
+        <p>
+          نحتفظ بالمعلومات فقط للمدة اللازمة لتقديم خدمات التطبيق، والامتثال للالتزامات القانونية،
+          وحل النزاعات، وتطبيق السياسات الخاصة بنا.
+        </p>
+
+        <h3>6. حماية البيانات</h3>
+        <p>
+          نستخدم إجراءات إدارية وتقنية وتنظيمية معقولة لحماية معلوماتك.
+          ومع ذلك، لا يوجد أي نظام آمن بشكل كامل، لذلك لا يمكننا ضمان الأمان المطلق.
+        </p>
+
+        <h3>7. خصوصية الأطفال</h3>
+        <p>
+          تطبيق PlayTok غير مخصص للأطفال دون السن المسموح به وفقًا للقوانين المعمول بها.
+          وإذا تبين لنا أننا جمعنا معلومات شخصية من طفل دون تفويض مناسب، فسنتخذ الإجراءات المناسبة لحذف تلك المعلومات.
+        </p>
+
+        <h3>8. حقوقك</h3>
+        <p>
+          بحسب موقعك الجغرافي، قد يكون لديك الحق في طلب الوصول إلى معلوماتك الشخصية أو تصحيحها أو حذفها.
+          ويمكنك التواصل معنا بخصوص هذه الطلبات.
+        </p>
+
+        <h3>9. التغييرات على هذه السياسة</h3>
+        <p>
+          قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ السريان.
+        </p>
+
+        <h3>10. تواصل معنا</h3>
+        <div class="contact-box">
+          إذا كان لديك أي سؤال حول سياسة الخصوصية أو كنت تحتاج إلى دعم، تواصل معنا عبر:
+          <br /><br />
+          <a href="mailto:co.87s@hotmail.com">co.87s@hotmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2026 PlayTok. All rights reserved.
+      <br />
+      جميع الحقوق محفوظة © 2026 PlayTok
+    </div>
+  </div>
+</body>
+</html>
